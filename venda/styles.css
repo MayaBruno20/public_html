@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #d92b44;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-shadow: black;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+     --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-shadow);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    min-height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    overflow-x: hidden;
+    background-color: var(--color-background);
+}
+
+    body{
+        background-image: url(images/Back03.png);
+        background-size: cover;
+    }
+
+header h1{
+    color: #1B9C85;
+}
+
+header h3{
+    color: var(--color-danger);
+}
+
+header .top{
+    width: 100%;
+    height: auto;
+}
+
+header .rectangle .retorno{
+    position: fixed;
+}
+
+header .rectangle .retorno span{
+    font-size: 40px;
+    margin-top: 1rem;
+}
+
+header .rectangle .retorno span a{
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+header .rectangle .retorno span a:hover{
+    color: white;
+}
+
+header .logo img{
+    width: 30%;
+    position: absolute;
+    top: 13%;
+    left: 35%;
+}
+
+header .text{
+    position: absolute;
+    top: 50%;
+    margin-left: 1rem;
+    font-size: 20px;
+    color: var(--color-dark);
+}
+
+header .top .back{
+    position: absolute;
+    top: 9.8%;
+    left: 42%;
+    height: 10%;
+}
+
+header{
+    background-image: url(images/Back02.png);
+    background-size: cover;
+}
+
+section{
+    position: absolute;
+    top: 100%;
+    margin-left: 1px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.90rem;
+}
+
+section:hover{
+    box-shadow: none;
+}
+
+section h3{
+    color: #1B9C85;
+    margin-bottom: 1rem;
+}
+
+section p{
+    color: var(--color-dark);
+}
+
+section span{
+    color: #1B9C85;
+}
+
+section > div{
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+section > div:hover{
+    box-shadow: none;
+}
+
+.btn2{
+    position: absolute;
+    top: 0.6rem;
+    right: 1rem;
+    color: white;
+    border: 1px solid #1b9c85;
+    background-color: #1b9c85;
+    border-radius: var(--border-radius-1);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn2 h3{
+    color: white;
+}
+
+.btn2:hover{
+    color: #181a1e;
+    background-color: var(--color-primary);
+}
+
+main .sep{
+    position: absolute;
+    top: 120%;
+}
+
+main .sep img{
+    width: 101%;
+}
+
+main .tex{
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 4rem;
+    font-size: 16px;
+}
+
+main .tex h1{
+    margin-bottom: 2rem;
+    color: var(--color-danger);
+}
+
+
+main .form{
+    margin-top: 30%;
+    margin-left: 26%;;
+    max-width: 700px;   
+}
+
+main .form h2{
+    font-size: 50px;
+    color: var(--color-danger);
+    text-align: center;
+    margin-bottom: 20px;
+}   
+
+main .form input[type="text"],
+main .form input[type="email"],
+main .form input[type="tel"],
+main .form select,
+main .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 3px solid #00a2ac;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a2ac; /* Azul */
+    color: #fff;
+    cursor: pointer;
+}
+
+ /* Estilos para o placeholder */
+ ::placeholder {
+    color: var(--color-danger);
+}
+
+/* Estilos para o botão ao ser clicado */
+.form input[type="submit"]:active {
+    background-color: #045357; /* Azul mais escuro */
+}
+
+main .form .inline-inputs {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+main .form .inline-inputs input[type="email"],
+main .form .inline-inputs input[type="tel"] {
+    width: 50%; /* Ajuste conforme necessário para dar espaço suficiente a cada input */
+    margin: 0.1rem;
+}
+
+.footer{
+    display: block;
+    flex-direction: column;
+    background-color: var(--color-white);
+    text-align: end;
+    box-shadow: var(--box-shadow);
+    height: auto; /* ou outra altura desejada */
+    padding: 20px; /* adicione o espaçamento desejado */
+    margin-top: 20px; /* ou outra margem desejada */
+    transition: all 0.3s ease;
+}
+
+.footer:hover{
+    box-shadow: none;
+}
+
+.footer p{
+    position: absolute;
+    align-items: baseline;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer .social img{
+    margin: 5px;
+    width: 2.0rem;
+    height: 2.0rem;
+}
+
+
+
+@media screen and (min-width: 1600px){
+
+    header .top .back img{
+        position: absolute;
+        left: 13.4rem;
+    }
+
+    section {
+        position: absolute;
+        top: 84%;
+    }
+
+    main .tex{
+        position: absolute;
+        top: 110%;
+        font-size: 20px;
+    }
+
+    main .form{
+        margin-top: 65%;
+    }
+
+    body{
+        background-image: url(images/Back03.png);
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .top .fx{
+    display: none;
+    }
+
+    header .rectangle .retorno{
+        margin-top: -0.8rem;
+    }
+
+    header .btn2{
+        width: 200px;
+        height: 30px;
+    }
+
+    header .logo img{
+        width: 70%;
+        top: 3rem;
+        left: 3.5rem;
+    }
+
+    header .rectangle{
+        top: 0;
+        width: 100%; /* Largura do retângulo */
+        height: 45px; /* Altura do retângulo */
+        background-color: var(--color-danger); /* Cor do retângulo */
+        box-shadow: var(--box-shadow);
+        transition: all 0.3s ease;
+    }
+
+    header .back{
+        display: none;
+    }
+
+    header .text{
+        text-align: center;
+        top: 10rem;
+        margin-left: 1.5rem ;
+        font-size: 12px;
+    }
+    
+    main .tex{
+        font-size: 10px;
+        margin-top: 63rem;
+        margin-left: -0.1rem;
+    }
+
+    main .tex h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    main .tex p br{
+        display: none;
+    }
+
+    main .tex p{
+        text-align: center;
+    }
+
+    main .sep{
+        top: 79rem;
+    }
+
+    section{
+        position: absolute;
+        top: 48%;
+        left: 0.3rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    main .form{
+        margin-top: 40%;
+        margin-left: 1%;;
+        max-width: 700px;
+    }
+
+    .footer{
+        background-color: var(--color-background);
+        color: var(--color-dark-variant);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        transition: all 0.3s ease;
+    }
+
+    .footer p{
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 25px;
+        margin-left: 2.6rem;
+    }
+    
+    .footer .social{
+        margin-left: -3.5rem;
+    }
+
+    .footer .social img{
+        margin-top: -1rem;
+        margin-left: 3rem;
+    }
+
+}

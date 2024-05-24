@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #FF0060;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-shadow: black;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+     --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-shadow);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: auto;
+    height: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+#loanForm h1{
+    position: relative;
+    bottom: 30px;
+}
+
+#loanForm input, button{
+    position: relative;
+    bottom: 15px;
+}
+
+header .calc h1{
+    margin-top: 2rem;
+}
+
+.sep .form1{
+    font-size: 50px;
+    margin-top: 3rem;
+    color: white;
+    background-color: var(--color-success);
+
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sep .form1:hover{
+    background-color: var(--color-danger);
+    border: #1B9C85;
+}
+
+header{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+header{
+    background-image: url('images/p1.png');
+    background-size: cover; /* ajusta a imagem para cobrir todo o container */
+    background-position: center;
+}
+
+header:hover{
+    box-shadow: none;
+}
+
+header .retorno{
+    position: fixed;
+}
+
+header .retorno span a{
+    color: #1B9C85;
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+header .retorno span a:hover{
+    color: var(--color-danger);
+}
+
+header .text{
+    margin-top: 2rem;
+    font-size: 20px;
+}
+
+.table .btn2{
+    margin-top: 3rem;
+    color: white;
+    border: 1px solid #FF0060;
+    background-color: #FF0060;
+    border-radius: var(--border-radius-1);
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.table .btn2:hover{
+    color: #181a1e;
+    border: #1B9C85;
+    background-color: #1B9C85;
+}
+
+header .calc{
+    background-color: #1c2048;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    text-align: center;
+} 
+
+header .calc img{
+    max-width: 30%;
+    height: auto;
+}
+
+header .calc:hover{
+    box-shadow: none;
+}
+
+header .calc h1, label{
+    color: white;
+}
+
+header .calc input{
+    color: #333; /* Cor do texto */
+    font-family: Arial, sans-serif; /* Fonte */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 10px; /* Espaçamento */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f9f9f9; /* Cor de fundo */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+header .calc #result{
+    color: white;
+}
+
+header .cx{
+
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+header .cx a{
+    color: var(--color-danger);
+    transition: all 0.3s ease;
+}
+
+header .cx a:hover{
+    color: #1B9C85;
+}
+
+
+header .btn1{
+    color: white;
+    border: 1px solid #FF0060;
+    background-color: #FF0060;
+    border-radius: var(--border-radius-1);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .btn1:hover{
+    border: white;
+    background-color: white;
+    color: #1c2042;
+}
+
+#loanForm{
+    margin-top: 3rem;
+}
+
+.sep{
+    background-color: #0a1551;
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.sep:hover{
+    box-shadow: none;
+}
+
+.sep h1{
+    color: var(--color-danger);
+}
+
+.sep p{
+    margin-top: 1rem;
+    color: white;
+    font-size: 15px;
+}
+
+main .info1 p{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 15px;
+}
+
+main .table{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--card-padding);
+    gap: 5rem;
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+main .table span{
+    color: var(--color-danger);
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+
+main .table h1{
+    font-size: 18px;
+}
+
+main .table h2{
+    margin-top: 3rem;
+}
+
+main .table ul, li{
+    list-style: none;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+main .table > div{
+    background-color: #1c2048;
+    color: white;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+main .table > div:hover{
+    box-shadow: none;
+}
+
+main .info2 h1{
+    margin-bottom: 3rem;
+    color: #1c2042;
+}
+
+main .info2 > div{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    margin-top: 3rem; 
+}
+
+main .info2{
+    background-color: var(--color-danger);
+    color: white;
+    padding: var(--card-padding);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+main .info2 span{
+    color: #1c2042 ;
+    font-size: 60px;
+}
+
+main .btn4{
+    background-color: #1c2048;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+main .btn4:hover{
+    background-color: #181a1e;
+}
+
+main .whats span{
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main .whats span:hover{
+    color: #1B9C85;
+}
+
+main
+
+.footer{
+    color: white;
+    background-color: #1c2042;
+}
+
+.footer{
+    flex-direction: column;
+    text-align: end;
+    padding: 20px; /* adicione o espaçamento desejado */
+}
+
+.footer p{
+    position: absolute;
+    align-items: baseline;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.footer .social img{
+    margin: 5px;
+    width: 2.0rem;
+    height: 2.0rem;
+}
+
+/* Estilos padrão para telas menores */
+@media only screen and (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Altera a disposição do cabeçalho para uma coluna */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    header .text {
+        margin-top: 1rem; /* Reduz a margem superior do texto no cabeçalho */
+    }
+
+    header .calc {
+        padding: 1rem; /* Reduz o preenchimento do elemento de calculadora */
+        margin-top: 1rem; /* Ajusta a margem superior */
+    }
+
+    header .calc img {
+        max-width: 50%; /* Reduz o tamanho da imagem */
+    }
+
+    main .table {
+        grid-template-columns: 1fr; /* Altera a disposição da tabela para uma coluna */
+        gap: 2rem; /* Ajusta o espaço entre os elementos da tabela */
+        margin-left: -1.7rem;
+    }
+
+    main .info2 > div {
+        grid-template-columns: 1fr; /* Altera a disposição da segunda seção de informações para uma coluna */
+        gap: 2rem; /* Ajusta o espaço entre os elementos */
+    }
+
+    .footer{
+        background-color: var(--color-background);
+        color: var(--color-dark-variant);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+        transition: all 0.3s ease;
+    }
+
+    .footer p{
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 25px;
+        margin-left: 2.6rem;
+    }
+    
+    .footer .social{
+        margin-left: -3.5rem;
+    }
+
+    .footer .social img{
+        margin-top: -1rem;
+        margin-left: 3rem;
+    }
+}
+
+/* Estilos para telas menores que 480px (por exemplo, smartphones em modo retrato) */
+@media only screen and (max-width: 480px) {
+    header .text h1 {
+        font-size: 1.5rem; /* Reduz o tamanho da fonte do título principal no cabeçalho */
+    }
+
+    header .calc {
+        width: 90%; /* Ajusta a largura da calculadora */
+        margin: 1rem auto; /* Centraliza horizontalmente */
+    }
+
+    header .btn2 {
+        width: 90%; /* Ajusta a largura do botão */
+    }
+}

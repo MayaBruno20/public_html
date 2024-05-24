@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venda seu FGTS de forma rápida e segura.">
+    <title>Antecipe seu FGTS!</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XDB32KEDNK">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XDB32KEDNK');
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16525770801"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16525770801');
+</script>
+</head>
+<body>
+    <header>
+        <div class="retorno">
+            <span class="material-symbols-outlined">
+               <a href="https://prseg.com.br">arrow_circle_left</a>
+            </span>
+        </div>
+        <div class="text">
+            <h3>Empréstimo FGTS</h3>
+            <h1>Antecipe até 10 anos<br>do seu Saque-Aniversário!</h1>
+            <p>*Horário de atendimento para antecipações via <br>Whatsapp de Segunda à Sexta das 7h às 18h. <br>Suporte 24h!</p>
+        </div>
+
+        <div class="calc">
+            <img src="images/logo.png" alt="">
+            <h1>Calculadora de Empréstimo FGTS</h1>
+            <form id="loanForm">
+                <label for="fgtsBalance"><h1>Saldo do FGTS:</h1></label>
+                <input type="number" id="fgtsBalance" name="fgtsBalance" required>
+                <button class="btn1" type="submit"><p>Calcular</p></button>
+            </form>
+
+        
+            <div id="result"></div>
+
+            <div class="cx">
+                <h3>Não sabe seu Saldo?</h3>
+                <a href="https://www.caixa.gov.br/atendimento/aplicativos/fgts/Paginas/default.aspx#video" target="_blank">Consulte no app FGTS Caixa</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="sep">
+        <h1>Condições Especiais Para Negativados!</h1>
+        <p>Receba em até 1 dia útil<br>Juros a partir de 1,29%</p> 
+    </div>
+
+    <main>
+        <div class="info1">
+            <p>O QUE VOCÊ PRECISA SABER SOBRE<BR><strong>Antecipação com a PR Cred</strong></p>
+                
+            <div class="table">
+                <div class="saque">
+                    <span class="material-symbols-outlined">
+                        published_with_changes
+                    </span>
+                    <h1>O Saque Aniversário <br>FGTS</h1>
+                    <p>A Modalidade de Saque-Aniversário <br>permite que o cliente faça<br> retiradas anuais do Fundo de Garantia<br> no mês de seu aniversário.</p>
+                    <p>Para aderir à modalidade, é necessário <br>escolher essa opção no aplicativo do <br>FGTS Caixa.</p>
+                </div>
+                <div class="antep">
+                    <span class="material-symbols-outlined">
+                        celebration
+                     </span>
+                    <h1>A Antecipação do Saque-Aniversário FGTS</h1>
+                    <p>*Clientes PR Cred podem <br>antecipar de 3 à 10 anos do seu <br>Saque-Aniversário FGTS <br>  (com taxa a partir de 1,29%). <br>Nosso diferencial é contar com uma <br>gama enorme de bancos parceiros, <br>para oferecer sempre as melhores taxas <br>do mercado!</p>
+                    <h2>O que você precisa para antecipar:</h2>
+                    <p>Ser maior de 18 anos, ter um saldo <br>mínimo disponível no fundo de garantia, <br>optar pela modalidade do Saque-<br>Aniversário e autorizar o Banco <br>parceiro informado pelo corretor para <br>consultar seu saldo.</p>
+                </div>
+                <div class="vant">
+                    <span class="material-symbols-outlined">
+                        workspace_premium
+                    </span>
+                    <h1>Vantagens de Antecipar com a <br>PR Cred</h1>
+                    <p><ul>
+                        <li>Contratação 100% Digital;</li>
+                        <li>Diponível em até 1 dia útil;</li>
+                        <li>Disponível também para negativados</li>
+                        <li>Sem boletos: Pagamentos feito diretamente entre a Caixa Econômica Federal e o Banco Selecionado;</li>
+                        <li>Tudo sem compremeter sua renda mensal!</li>
+                    </ul></p>
+                    <button class="btn2" onclick="openWhatsApp()"><h3>Contratar Pelo Whatsapp</h3></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="info2">
+            <h1>Como antecipar seu Saque-Aniversário FGTS?</h1>
+            <div class="acess">
+                <span class="material-symbols-outlined">
+                    mobile_friendly
+                </span>
+                <h3>1 - Acesse o app do FGTS Caixa</h3>
+                <p>Ative a modalidade saque-aniversário.</p>
+            </div>
+            <div class="aut">
+                <span class="material-symbols-outlined">
+                    lock_reset
+                </span>
+                <h3>2 - Autorize o Banco</h3>
+                <p>Ainda no aplicativo, entre na lista de bancos, e autorize <br>o correspondente a visualizar seu saldo <br>do FGTS.</p>
+            </div>
+            <div class="sim">
+                <span class="material-symbols-outlined">
+                    support_agent
+                </span>
+                <h3>3 - Simule com nossos corretores especializados</h3>
+                <p>Faça a simulação com nossos corretores e aguarde a <br>análise dos seus dados.</p>
+            </div>
+            <div class="whats">
+                <span class="material-symbols-outlined">
+                    <button class="btn4" onclick="openWhatsApp()">
+                        <span class="material-symbols-outlined">
+                            perm_phone_msg
+                        </span>
+                    </button>
+                </span>
+                <h3>Entre em Contato, e saia da dívida sem comprometer sua renda!</h3>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2024 PR Seg. Todos os direitos reservados.</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/corretoraprseg?mibextid=LQQJ4d" target="_blank">
+                <img src="images/icon/facebook.png" >
+            </a>
+            <a href="https://www.instagram.com/prseg_/" target="_blank">
+                <img src="images/icon/instagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/company/prseg/" target="_blank">
+                <img src="images/icon/linkedin.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function openWhatsApp() {
+            // Substitua "seu-numero" pelo número de telefone com o código do país, sem espaços, traços ou parênteses
+            var numero = "+5543988004805";
+            // Se você quiser adicionar uma mensagem pré-definida, substitua "mensagem" pela sua mensagem
+            var mensagem = "Gostaria de obter mais informações!";
+            // Formate o link do WhatsApp
+            var link = "https://api.whatsapp.com/send?phone=" + +5543988004805 + "&text=" + mensagem;
+            // Abra o link no WhatsApp
+            window.open(link);
+        }
+        </script>
+</body>
+</html>

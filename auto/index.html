@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Financiamento Auto</title>
+</head>
+<body>
+    <header>
+        <div class="retorno">
+            <span class="material-symbols-outlined">
+               <a href="https://prseg.com.br">arrow_circle_left</a>
+            </span>
+        </div>
+        <div class="info">
+            <h1>Realize seu Sonho com o<br>Financiamento Auto PR Cred</h1>
+            <p>*Entre em contato para realizar seu sonho!</p>
+            <button class="btn1" onclick="openWhatsApp()"><h3>Simule Agora</h3></button>
+        </div>
+        <div class="logo">
+            <img src="images/prcred.png" alt="">
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <h1>Praticidade, Flexibilidade e Suporte.</h1>
+            <div class="rectangle">
+                <small>
+                    <img src="images/financa.png" alt="">
+                </small>
+                <div class="texto">
+                    <h1>Entenda Como Funciona<br> o Financiamento Auto!</h1>
+                    <p><b>Você tem um sonho de dirigir aquele carro dos seus sonhos? Não deixe que as preocupações financeiras atrapalhem sua jornada. Com o nosso serviço de financiamento automotivo, estamos aqui para transformar seus sonhos em realidade, colocando você atrás do volante do carro que sempre desejou.</b></p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="square1">
+                    <small>
+                        <img src="images/pontuacao-de-credito.png" alt="">
+                    </small>
+                    <h1>Análise de crédito<br>na hora</h1>
+                    <p><b>Ao fazer uma simulação, a análise de<br>crédito sai na hora!</b></p>
+                </div>
+                <div class="square2">
+                    <small>
+                        <img src="images/agente-de-atendimento-ao-cliente.png" alt="">
+                    </small>
+                    <h1>Atendimento especializado</h1>
+                    <p><b>Aqui você conta com atendimento especializado por toda jornada de contratação!</b></p>
+                </div>
+    
+                <div class="square3">
+                    <small>
+                        <img src="images/ganho.png" alt="">
+                    </small>
+                    <h1>Utilize seu Fundo de Garantia</h1>
+                    <p><b>Para compor o valor de entrada ou<br>durante o seu contrato.</b></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="dream">
+            <img src="images/Car.png" alt="">
+            <h1>Transforme o seu sonho em realidade:<br>Garanta já o seu financiamento auti<br>e conquiste o carro dos sonhos!</h1>
+            <button class="btn2" onclick="openWhatsApp()"><h3>Simule Agora</h3></button>
+        </div>
+    </main>
+
+    <div class="form">
+        <div class="h">
+            <h2>Entre em Contato!</h2>
+        </div>
+        <form action="enviar.php" method="post">
+            <input type="text" id="nome" name="nome" placeholder="nome" required><br><br>
+
+            <div class="inline-inputs">
+                <input type="email" id="email" name="email" placeholder="e-mail" required><br><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="ddd + telefone" required><br><br>
+            </div>
+            <input type="text" id="assunto" name="assunto" placeholder="Assunto" required><br><br>
+
+            <select name="produto" id="produto" required>
+                <option value="" disabled selected hidden>Produtos</option>
+                <option value="Financiamento Auto">Financiamento Auto</option>
+                <option value="Mais Infos">Outras Informações</option>
+            </select><br><br>
+
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem" rows="4"></textarea><br><br>
+
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </div>
+
+    </form>
+
+    <footer>
+        <p>&copy; 2024 PR Seg. Todos os direitos reservados.</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/corretoraprseg?mibextid=LQQJ4d" target="_blank">
+                <img src="images/icon/facebook.png" >
+            </a>
+            <a href="https://www.instagram.com/prseg_/" target="_blank">
+                <img src="images/icon/instagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/company/prseg/" target="_blank">
+                <img src="images/icon/linkedin.png" alt="">
+            </a>
+        </div>
+    </footer>
+    <script>
+        function openWhatsApp() {
+            // Substitua "seu-numero" pelo número de telefone com o código do país, sem espaços, traços ou parênteses
+            var numero = "+5543988004805";
+            // Se você quiser adicionar uma mensagem pré-definida, substitua "mensagem" pela sua mensagem
+            var mensagem = "Gostaria de obter mais informações!";
+            // Formate o link do WhatsApp
+            var link = "https://api.whatsapp.com/send?phone=" + +5543988004805 + "&text=" + mensagem;
+            // Abra o link no WhatsApp
+            window.open(link);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon">
+    <title>PR Seg - Facilitadora Financeira | Corretora de Seguros | Seguros Personalizados</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo/7_PR_SEG_horizontal_preferencial.png" alt="">
+                </div>
+                
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#" class="active" onclick="navigateTo('nav/home.html')">
+                    <span class="material-icons-sharp">
+                        house
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="#" class="dropdown-toggle" onclick="carregarProdutos1('')">
+                    <span class="material-icons-sharp">
+                        assured_workload
+                    </span>
+                    <h3>Seguros</h3>
+                </a>
+                <a href="#" class="dropdown-toggle" onclick="carregarProdutos2('')">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>Serviços</h3>
+                </a>
+                <a href="#"  onclick="carregarProdutos4('')">
+                    <span class="material-icons-sharp">
+                        monetization_on
+                    </span>
+                    <h3>PR Cred</h3>
+                </a>    
+                <a href="#" class="dropdown-toggle" onclick="carregarProdutos3('')">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Sobre Nós</h3>
+                </a>
+                <a href="#" onclick="navigateTo('nav/contato.html')">
+                    <span class="material-icons-sharp">
+                        contacts
+                    </span>
+                    <h3>Contato</h3>
+                </a>
+
+                <a href="nav/obrigado.html">
+                    <span>
+
+                    </span>
+                    <h3>Form</h3>
+                </a>
+
+                <a href="https://prsegti.com">
+                    <span class="material-icons-sharp">
+                        webhook
+                    </span>
+                    <h3>Interno</h3>
+                </a>
+            </div>
+            <div id="conteudoPrincipal">
+                
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="container" id="content">
+            <!-- O conteúdo será carregado aqui -->
+        </div>
+        
+    </main>
+
+    <div class="right">
+        <div class="nav2">
+            <button id="menu-btn">
+                <span class="material-icons-sharp">
+                    menu
+                </span>
+            </button>
+            <div class="dark-mode">
+                <span class="material-icons-sharp active">
+                    light_mode
+                </span>
+                <span class="material-icons-sharp">
+                    dark_mode
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 PR Seg. Todos os direitos reservados.</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/corretoraprseg?mibextid=LQQJ4d" target="_blank">
+                <img src="images/icon/facebook.png" >
+            </a>
+            <a href="https://www.instagram.com/prseg_/" target="_blank">
+                <img src="images/icon/instagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/company/prseg/" target="_blank">
+                <img src="images/icon/linkedin.png" alt="">
+            </a>
+        </div>
+    </div> 
+
+    <script src="scripts/dark.js"></script>
+    <script src="scripts/script.js"></script> 
+    <script>
+    // Obtém todos os links de navegação
+    var links = document.querySelectorAll('.sidebar a');
+
+    // Itera sobre os links de navegação
+    links.forEach(function(link) {
+    // Adiciona um ouvinte de eventos de clique a cada link
+    link.addEventListener('click', function() {
+        // Remove a classe 'active' de todos os links
+        links.forEach(function(item) {
+            item.classList.remove('active');
+        });
+
+        // Adiciona a classe 'active' apenas ao link clicado
+        this.classList.add('active');
+        });
+    });
+    </script>
+</body>
+
+</html>

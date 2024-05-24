@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #c74255;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 1rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow1: 2rem 0rem 0rem var(--color-light);
+}
+
+.dark-mode-variables{
+    --color-background: #181a1e;
+     --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    user-select: none;
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+    font-family: 'Poppins', sans-serif;
+}
+
+.left .tri{
+    position: absolute;
+    top: 176.5%;
+}
+
+main{
+    margin: auto;
+}
+
+main .resume{
+    position: absolute;
+    top: 10%;
+    left: 33.5%;
+    text-align: center;
+}   
+
+main .resume h1{
+    font-family: 'Libre Caslon';
+    font-size: 300%;
+    margin-bottom: 1rem;
+}
+
+main .banner{
+    position: absolute;
+    top: 41.5%;
+    left: 27.8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    width: auto;
+    max-width: 50%;
+    height: auto;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+main .banner:hover{
+    box-shadow: none;
+}
+
+main .banner h1{
+    color: var(--color-primary);
+    font-size: 200%;
+}
+
+main .banner .text p{
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-dark);
+}
+
+main .banner .text h6{
+    font-size: 13px;
+    margin-top: 1rem;
+}
+
+main .banner .text span{
+    color: #677483;
+    position: relative;
+    top: 2.3rem;
+}
+
+main .banner img{
+    width: 70%;
+    position: relative;
+    left: 25%;
+}
+
+main .map li{
+    list-style: none;
+}
+
+main .map img{
+    position: relative;
+    top: 1.5rem;
+    width: 37%;
+    margin-left: 1rem;
+}
+
+
+main .map .text{
+    position: absolute;
+    top: 125%;
+    right: 2%;
+    text-align: right;
+}
+
+main .map .text a{
+    color: #045357;
+    transition: all 0.3s ease-in-out;
+}
+
+main .map .text a:hover{
+    color: var(--color-warning);
+}
+
+main .map .text h1{
+    color: #07487e;
+    font-size: 35px;
+}
+
+main .map .text h5{
+    color: #8adbb8;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+
+main .map .text p{
+    color: #00a2ac;
+}
+
+main .map .te{
+    margin-top: 2rem;
+}
+
+main .tex{
+    position: absolute;
+    top: 120%;
+    left: 31%;
+    text-align: left;
+}
+
+main .tex ul li, a{
+    list-style: none;
+    color: #00a2ac;
+    transition: all 0.3s ease-in-out;
+}
+
+main .tex a:hover{
+    color: var(--color-warning);
+}
+
+main .tex h5{
+    color: #8adbb8;
+    font-size: 20px;    
+}
+
+main .tex p{
+    color: #00a2ac;
+    margin-bottom: 2rem;
+}
+
+main .form{
+    margin-top: 20%;
+    margin-left: 26%;;
+    max-width: 700px;   
+}
+
+main .form h2{
+    font-size: 50px;
+    color: var(--color-danger);
+    text-align: center;
+    margin-bottom: 20px;
+}   
+
+main .form input[type="text"],
+main .form input[type="email"],
+main .form input[type="tel"],
+main .form select,
+main .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 3px solid #00a2ac;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura do input */
+}
+
+.form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00a2ac; /* Azul */
+    color: #fff;
+    cursor: pointer;
+}
+
+ /* Estilos para o placeholder */
+ ::placeholder {
+    color: var(--color-danger);
+}
+
+/* Estilos para o botão ao ser clicado */
+.form input[type="submit"]:active {
+    background-color: #045357; /* Azul mais escuro */
+}
+
+main .form .inline-inputs {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+main .form .inline-inputs input[type="email"],
+main .form .inline-inputs input[type="tel"] {
+    width: 50%; /* Ajuste conforme necessário para dar espaço suficiente a cada input */
+    margin: 0.1rem;
+}
+
+.right .tri{
+    position: absolute;
+    top: 76%;
+    right: 0%;
+}
+
+.right .circle{
+    position: absolute;
+    top: 186%;
+    right: 2.3%;
+}
+
+@media screen and (min-width: 1600px){
+    .left .tri{
+        margin-top: 3%;
+    }
+
+    main .resume{
+        margin-left: 2rem;
+        font-size: 17px;
+    }
+
+    main .banner .text, h6{
+        font-size: 20px;
+    }
+
+    main .map .text, .tex{
+        font-size: 18px;
+    }
+
+    main .form{
+        margin-left: 33%;
+    }
+
+    .right .tri{
+        margin-top: 2.7%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main .resume{
+        text-align: center;
+        left: 0;
+        margin-top: 6rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    main .resume p{
+        font-size: 13px;
+    }
+
+    main .resume br{
+        display: none;
+    }
+
+    main .banner img{
+        width: 30%;
+        position: absolute;
+        top: -21rem;
+        margin-left: 2.6rem;    
+    }
+
+    main .banner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        top: 48%;
+        left: 0;
+        width: auto;
+        max-width: 100%;
+    }
+
+    main .banner .text h6{
+        font-size: 11px;
+    }
+
+    main .map img{
+        width: 70%;
+        position: relative;
+        top: 54rem;
+        margin-left: 4rem;
+    }
+
+    main .text br{
+        display: none;
+    }
+
+    main .map .text h1{
+        margin-top: 7rem;
+        text-align: center;
+        margin-left: 0.1rem;
+    }
+
+    main .te{
+        text-align: center;
+        margin-left: 0.5rem;
+
+    }
+
+    main .tex{
+        text-align: center;
+        margin-top: 46rem;
+        left: 0.3rem;
+        right: 0.3rem;
+    }
+
+    main .form{
+        position: absolute;
+        margin-top: 120rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+    }
+
+    .left .tri img{
+        width: 100%;
+        margin-top: 40rem;
+    }
+
+    .right .tri img{
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .right .circle img {
+        width: 70%;
+        margin-top: 35.8rem;
+        margin-left: 7.4rem;
+    }
+
+    .footer{
+        background-color: var(--color-background);
+        color: var(--color-dark-variant);
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 181rem;
+        transition: all 0.3s ease;
+    }
+
+    .footer p{
+        position: absolute;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 15px;
+        margin-left: 3.6rem;
+    }
+    
+    .footer .social img{
+        margin-top: -1rem;
+        margin-left: 1rem;
+    }
+}

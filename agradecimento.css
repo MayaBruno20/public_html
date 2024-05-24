@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+
+:root{
+    --color-primary: #6C9BCF;
+    --color-danger: #c74255;
+    --color-success: #1B9C85;
+    --color-warning: #F7D060;
+    --color-white: #fff;
+    --color-info-dark: #7d8da1;
+    --color-dark: #363949;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-dark-variant: #677483;
+    --color-background: #f6f6f9;
+    --color-box: #4fa7b1;
+    --color-letter: #2d2f37;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow1: 2rem 0rem 0rem var(--color-light);
+}
+
+body{
+    background-image: url(images/Obrigado.png);
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.animated-button {
+    position: absolute;
+    left: 67.3rem;
+    top: 14.3rem;
+    width: 55px;
+    height: 55px;
+    background-color: var(--color-box);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+}
+
+main .roll{
+    position: absolute;
+    top: 130rem;
+    color: #252827;
+}
+
+.prseg{
+    position: absolute;
+    top: 62.5rem;
+    left: 23rem;
+    color: white;
+}
+
+.prseg h1{
+    margin-bottom: 7rem;
+    text-align: center;
+}
+
+.prcred{
+    position: absolute;
+    top: 62.5rem;
+    right: 10rem;
+    color: white;
+}
+
+.prcred > a h1, .prseg > h1{
+    width: Auto;
+    height: Auto;
+    background-color: var(--color-box);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.prcred > a h1:hover{
+    transform: scale(1.1);
+}
+
+.prcred h1{
+    margin-bottom: 7rem;
+    text-align: center;
+
+}
+
+footer .return button{
+    position: absolute;
+    top: 101.8rem;
+    right: 20rem;
+    width: 100px;
+    height: 50px;
+    background-color: var(--color-box);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+footer .return button:hover{
+    transform: scale(1.1); 
+}
+
+footer img{
+    position: fixed;
+    width: 100%;
+    bottom: 0 ;
+}
+
+@media screen and (min-width: 1600px) {
+    .animated-button {
+        position: absolute;
+        left: 85.2rem;
+        top: 18.2rem;
+        width: 65px;
+        height: 65px;
+        background-color: var(--color-box);
+    }
+
+
+
+    main .roll{
+        position: absolute;
+        top: 165rem;
+        color: #252827;
+    }
+    
+    .prseg{
+        position: absolute;
+        top: 78rem;
+        left: 28rem;
+        color: white;
+    }
+    
+    .prseg h1{
+        margin-bottom: 9rem;
+        text-align: center;
+    }
+    
+    .prcred{
+        position: absolute;
+        top: 80rem;
+        right: 10rem;
+        color: white;
+    }
+
+    .prcred a h1{
+        margin-bottom: 7.5rem;
+    }
+
+    footer .return button{
+        position: absolute;
+        top: 128rem;
+        right: 26rem;
+        width: 120px;
+        height: 60px;
+    }
+}

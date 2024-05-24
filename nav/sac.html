@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/sac.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo/logo.png" type="image/x-icon">
+    <title>PR Seg - Atendimento ao Cliente Personalizado</title>
+</head>
+
+<body>
+    <div class="left">
+        <div class="tri">
+            <img src="images/form2.png" alt="">
+        </div>
+    </div>
+
+    <main>
+        
+        <div class="resume">
+            <div class="head">
+                <h1>SAC</h1>
+                <p>Estamos Comprometidos em oferecer atendimentos excepcionais aos clientes <br>com um suporte técnico de primeira classe. Nosso SAC está disponível para responder às suas perguntas, <br>resolver problemas e ouvir suas sugestões, garantindo que sua experiência conosco <br>seja a melhor possível.</p>
+            </div>
+
+        </div>
+
+        <div class="banner">
+            <div class="text">
+                <p>Seja Bem Vindo!</p>
+                <h1>Deixe-nos Saber Como<br>Ajudar!</h1>
+                <p>Nossa equipe está aqui para ajudá-lo, se você tiver alguma dúvida, problema ou precisa de assistência, não hesite em nos contatar. Estamos dedicados a garantir que você tenha a melhor experiência com nossos serviços e produtos!</p>
+            </div>
+            <div class="img">
+                <img src="images/SAC2.png" alt="">
+            </div>
+        </div>
+
+        <div class="map">
+            <img src="images/SAC.png" alt="">
+            <div class="text">
+                <h1>Agentes disponíveis para<br> ajudar 24/7!</h1>
+                <div class="te">
+                    <span class="material-icons-sharp">
+                        mail
+                    </span>
+                    <h5>E-mail</h5>
+                    <ul>
+                        <li><a href="mailto:marketing@prseg.com.br"><b>Marketing</b></a></li>
+                        <li><a href="mailto:sac@prseg.com.br"><b>Central - SAC</b></a></li>
+                        <li><a href="mailto:suporte@prseg.com.br"><b>Suporte Site</b></a></li>
+                    </ul>
+                    <span class="material-icons-sharp">
+                        support_agent
+                    </span>
+                    <h5>Telefone</h5>
+                    <ul>
+                        <li><b>WhatsApp: (16) 99219-2634</b></li>
+                        <li><b>Telefone: (16) 3703-8775</b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="h">
+                <h2>Entre em Contato!</h2>
+            </div>
+            <form action="enviar.php" method="post">
+                <input type="text" id="nome" name="nome" placeholder="nome" required><br><br>
+
+                <div class="inline-inputs">
+                    <input type="email" id="email" name="email" placeholder="e-mail" required><br><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="ddd + telefone" required><br><br>
+                </div>
+                <input type="text" id="assunto" name="assunto" placeholder="Assunto" required><br><br>
+
+                <select name="produto" id="produto" required>
+                    <option value="" disabled selected hidden>Produtos</option>
+                    <option value="Auto">Auto</option>
+                    <option value="Empresarial">Empresarial</option>
+                    <option value="Dental">Dental</option>
+                    <option value="Financiamento Imobilario">Financiamento Imobiliário</option>
+                    <option value="Financiamento Auto">Financiamento Auto</option>
+                    <option value="FGTS">FGTS</option>
+                    <option value="Venda de Consorcio">Venda de Consórcio</option>
+                    <option value="Compra de Consorcio">Compra de Consórcio</option>
+                </select><br><br>
+
+                <textarea name="mensagem" id="mensagem" placeholder="Mensagem" rows="4"></textarea><br><br>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+
+    </main>
+
+    <div class="right">
+        <div class="tri">
+            <img src="images/form1.png" alt="">
+        </div>
+        <div class="circle">
+            <img src="images/circle.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
