@@ -24,7 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Enviando o e-mail
     if (mail($destinatario, $assunto_email, $corpo_email)) {
-        echo "Obrigado! Seu Formulário foi enviado com sucesso.";
+        header("Location: obrigado.html");
+        exit();
     } else {
         echo "Desculpe, tente novamente mais tarde.";
     }
