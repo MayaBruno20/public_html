@@ -57,6 +57,10 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+picture img{
+    display: none;
+}
+
 .left .tri{
     position: absolute;
     top: 176.5%;

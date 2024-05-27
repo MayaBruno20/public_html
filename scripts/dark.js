@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // img
     function updateLogo(isDarkMode) {
         const logo = document.querySelector('.logo img');
+
         if (isDarkMode) {
             logo.src = 'images/logo/logo2.png';
         } else {

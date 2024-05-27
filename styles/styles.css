@@ -183,13 +183,21 @@ main{
     margin: auto;
 }
 
+picture img{
+    width: 101%;
+    position: absolute;
+    top: 0;
+}
+
+
+
 main .intro{
     background-image: url(images/Back03.png);
     background-size: cover;
 
 }
 
-main .intro img{
+main .alter img{
     display: none;
 }
 
@@ -712,12 +720,14 @@ nav .sidebar-right a:hover span{
 
 
 @media screen and (min-width: 1600px){
+    picture img{
+        margin-top: -0.3rem;
+    }
 
     main .intro{
         margin-left: 32%;
         font-size: 20px;
     }
-
     .square1 {
         position: absolute;
         top: 85%;
@@ -745,7 +755,7 @@ nav .sidebar-right a:hover span{
     
     .rectangle {
         position: absolute;
-        top: 110%;
+        top: 107%;
         width: 100%; /* Largura do retângulo */
         height: 380px; /* Altura do retângulo */
         background-color: var(--color-danger); /* Cor do retângulo */
@@ -855,20 +865,28 @@ nav .sidebar-right a:hover span{
         margin-inline-start: 1rem;
     }
 
-    main .intro img{
+    picture img{
+        display: none;
+    }
+
+    main .alter img{
         display: block;
         width: 50%;
-        margin-top: -3rem;
-        margin-left: 6rem;
-        margin-bottom: -2rem;
+        margin-top: -6rem;
+        margin-left: 7rem;
     }
 
     main .intro br{
         display: none;
     }
 
+    main .intro{
+        margin-top: 7.5rem;
+    }
+
     main .intro h1{
         font-size: 20px;
+        margin-bottom: -1rem;
     }
 
     .tree p{
@@ -1052,5 +1070,5 @@ nav .sidebar-right a:hover span{
         margin-top: -1rem;
         margin-left: 3rem;
     }
-
+    
 }
