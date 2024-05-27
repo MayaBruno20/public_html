@@ -1,0 +1,41 @@
+
+            <div class="contact">
+                <h1>Contato e Suporte:</h1>
+                <p><b>E-mail:</b> marketing@prseg.com.br</p>
+                <p><B>Telefone:</B> +55 (16) 3703-8775</p>
+                
+                <div class="text">
+                    <ul>
+                        
+                        <li><B>Suporte T.I:</B> +55 (43) 98800-4805</li>
+                        <li><B>WhatsApp:</B> (16) 99219-2634</li>
+                        <li><B>Atendimento:</B> Das 08:00 às 17:00</li>
+                    </ul>
+                </div>
+                <div class="andress">
+                    <h1>Escritórios</h1>
+                    <p>Av. Orlando Dompieri, 1975 - Jardim Barão,<br>Franca - SP, 14409-003</p>
+                    <p>R. Maria Tito da Motta Mendes, 99 - Jd. Império do Sol,<br>Londrina - PR, 86073-790</p>
+                </div>
+            </div>
+
+
+            main .contact{
+                text-align: left;
+                margin-top: 4rem;
+                margin-left: -10rem;
+                font-family: 'Poppins', sans-serif;
+            }
+            
+            main .contact p{
+                margin: 0;
+            }
+            
+            main .contact h1{
+                color: var(--color-primary);
+            }
+            
+            main .contact ul, li{
+                margin-left: 0rem;
+                list-style: none;
+            }

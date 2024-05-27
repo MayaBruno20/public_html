@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="shortcut icon" href="images/logos/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <title>Pesquisa Seguro</title>
+</head>
+
+<body>
+
+    <div class="headText">
+        <img src="images/logos/logo.png" alt="">
+
+        <div class="promo">
+            <h1>Pare de perder dinheiro no seu Seguro. Garanta que esse ano a sua renovação tenha um preço justo!</h1>
+        </div>
+    </div>
+
+    <header>
+        <div class="info2">
+            <small>
+                <img src="" alt="">
+            </small>
+            <h1>Por que Confiar Na Gente?</h1>
+            <p><b>Parcerias com as Principais Seguradoras:</b> Atendemos as maiores e mais confiáveis seguradoras do mercado!</p>
+            <p><b>Consultoria Dedicada:</b> Atendemos cada cliente como ele merece, buscamos entender suas necessidades e encaixar o melhor produto.</p>
+            <p><b>Segurança e Privacidade:</b> Seus dados são tratados com total confidencialidade e segurança.</p>
+        </div>
+    </header>
+
+    <div class="background">
+        <img src="images/background line.png" alt="">
+    </div>
+
+    <section>
+        <div class="sep">
+            <img src="images/Separador.png" alt="">
+        </div>
+    </section>
+
+    
+
+    <main>
+        <div class="form">
+            <div class="h">
+                <h2>Preencha o Formulário!</h2>
+                <p>Garanta que seu seguro tenha o preço justo!</p>
+            </div>
+
+            <form action="script.php" method="post">
+                <input type="text" id="nome" name="nome" placeholder="nome*" required><br><br>
+
+                <div class="inline-inputs">
+                    <input type="email" id="email" name="email" placeholder="e-mail*" required><br><br>
+                    <input type="tel" name="telefone" id="telefone" placeholder="ddd + telefone"><br><br>
+                </div>
+
+                <fieldset id="produto">
+                    <legend>Seguro Contratado</legend>
+                    <label class="checkbox-item veiculo">
+                        <input type="checkbox" id="auto" name="produto[]" value="Auto">
+                        <span>Automóvel</span>
+                    </label>
+                    <label class="checkbox-item empresarial">
+                        <input type="checkbox" id="empresarial" name="produto[]" value="Empresarial">
+                        <span>Empresarial</span>
+                    </label>
+                    <label class="checkbox-item residencia">
+                        <input type="checkbox" id="residencia" name="produto[]" value="Residencia">
+                        <span>Residência</span>
+                    </label>
+                    <label class="checkbox-item outros">
+                        <input type="checkbox" id="outros" name="produto[]" value="Outros">
+                        <span>Outros</span>
+                    </label>
+                </fieldset>
+
+                <textarea name="mensagem" id="mensagem" placeholder="Observações" rows="1"></textarea><br><br>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </div>
+
+
+
+
+        <div class="rodape">
+            <div class="container">
+                <h1>A maior variedade de produtos, com as melhores seguradoras</h1>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images/logos/porto.png" alt="">
+                        <img src="images/logos/Liberty.png" alt="">
+                        <img src="images/logos/bradesco.png" alt="">
+                        <img src="images/logos/hdi.png" alt="">
+                        <img src="images/logos/itau.png" alt="">
+                        <img src="images/logos/Mapfre.png" alt="">
+                        <img src="images/logos/azul.png" alt="">
+                        <img src="images/logos/Suhai.png" alt="">
+                        <img src="images/logos/tokio.png" alt="">
+                        <img src="images/logos/axa.png" alt="">
+                        <img src="images/logos/sompo.png" alt="">
+                    </div>
+
+                    <div class="carousel-controls">
+                        <span class="carousel-dot active" data-slide="0"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                        <span class="carousel-dot" data-slide="1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="tree">
+        <div class="square1">
+            <small>
+                <img src="images/visao.png" alt="">
+            </small>
+            <h3>Visão</h3>
+            <p> Buscamos ser líderes em excelência e integridade nas finanças, superando expectativas com expertise, tecnologia e compromisso com segurança e dos clientes.</p>
+        </div>
+
+        <div class="square2">
+            <small>
+                <img src="images/alvo.png" alt="">
+            </small>
+            <h3>Missão</h3>
+            <p>Promovemos tranquilidade e segurança financeira com soluções de qualidade, orientação honesta e transparência, agindo com integridade e priorizando os melhores interesses dos clientes.</p>
+        </div>
+
+        <div class="square3">
+            <small>
+                <img src="images/valor.png" alt="">
+            </small>
+            <h3>Valores</h3>
+            <p>Agir com honestidade e ética, sendo transparente em operações comerciais, construindo confiança, respeitando diversidade, assumindo responsabilidade e compromisso com a qualidade para clientes e colaboradores.</p>
+        </div>   
+    </div>
+
+    <div class="rectangle">
+        <img src="images/Traço.png" alt="">
+        <h1>Revolucionando<br>o Mercado</h1>
+        <div class="info-banner">
+            <h2><b>Investimos em pessoas,<br>métodos e tecnologias para<br>potencializar nossos produtos</b></h2>
+            <p>Unimos conhecimentos, pessoas talentosas e parcerias<br> estratégicas para gerar valor e potencializar nossos serviços.</p>
+        </div>
+        
+    </div>
+
+    <div class="info3">
+        <small>
+            <img src="" alt="">
+        </small>
+        <h1>Por quê participar?</h1>
+        <p>Ao preencher este formulário, você está garantindo uma bela economia na sua renovação e ainda tendo a <br>certeza do melhor atendimento que poderia ter para tratar todos os processos que precisar, <br>com atendimento 24h por dia 7 dias por semana!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PR Seg. Todos os direitos reservados.</p>
+
+        <div class="social">
+            <a href="https://www.facebook.com/corretoraprseg?mibextid=LQQJ4d" target="_blank">
+                <img src="images/icon/facebook.png" >
+            </a>
+            <a href="https://www.instagram.com/prseg_/" target="_blank">
+                <img src="images/icon/instagram.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/company/prseg/" target="_blank">
+                <img src="images/icon/linkedin.png" alt="">
+            </a>
+        </div>
+
+        <h6>Política de Privacidade <a href="https://www.gov.br/mds/pt-br/acesso-a-informacao/governanca/integridade/campanhas/lgpd#:~:text=A%20LGPD%20define%20que%20uma,preserve%20o%20direito%20do%20titular." target="_blank">LGPD</a></h6>
+    </footer>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
