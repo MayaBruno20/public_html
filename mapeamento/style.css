@@ -466,12 +466,64 @@ footer .social img{
 }
 
 @media screen and (max-width: 768px) {
+    .background img{
+        width: 120%;
+        position: absolute;
+        top: -0.3rem;
+        right: 0rem;
+    }
+
     .headText img{
         width: 300px;
         height: auto;
         margin-left: 10%;
     }
     
+    .promo{
+        position: absolute;
+        top: 35%;
+        left: 0;
+        margin: 0;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+        width: auto; /* Largura do retângulo */
+        height: auto; /* Altura do retângulo */
+        border-radius: 20px;
+    }
+
+    .promo h1{
+        font-size: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--color-background);
+    }
+
+    .info2{
+        width: 100%; /* Largura dos quadrados */
+        height: auto; /* Altura dos quadrados */
+        margin: 0;
+        margin-top: 5rem;
+        text-align: center;
+        border-radius: 20px;
+    }
+    
+    .info2 h1, p{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .info3{
+        font-size: 100%;
+        height: auto;
+    }
+
+    .sep img{
+        width: 100%;
+        margin-top: 30%;
+    }
+
     main{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -480,6 +532,14 @@ footer .social img{
         margin-right: 0.3rem;
         gap: 5rem;
         text-align: center;
+    }
+
+    main .form{
+        margin-top: -2rem;
+    }
+
+    main .container, .carousel{
+        display: none;
     }
 
     main .rodape{
@@ -492,12 +552,6 @@ footer .social img{
         width: 200px;
         height: auto;
     }
-
-    main .contact{
-        margin-top: 0rem;
-        text-align: center;
-    }
-    
 
     header{
         display: grid;
@@ -512,26 +566,13 @@ footer .social img{
         width: 50%;
     }
 
-    main .form{
-        margin-right: 0.3rem;
-    }
-
-    main .call {
-        text-align: center;
-        margin-left: 0;
-
-    }
-
-    main .contact{
-        margin-top: 0;
-        margin-left: 0;
-        font-family: 'Poppins', sans-serif;
-    }
-
     .tree{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+        margin-top: -5rem;
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
     }
 
 .square1,
@@ -562,6 +603,10 @@ footer .social img{
         display: none;
     }
 
+    .info-banner p br{
+        display: none;
+    }
+
     .info-banner p{
         text-align: right;
         font-size: 15px;
@@ -569,7 +614,6 @@ footer .social img{
         margin-left: -7rem;
         margin-right: 0.3rem;
     }
-
 }
 
 
