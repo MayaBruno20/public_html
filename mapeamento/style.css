@@ -621,8 +621,23 @@ footer .social img{
     .headText img{
         width: 30%;
         margin-top: -5rem;
-        margin-left: 4rem;
+        margin-left: 1rem;
     }
+
+    .promo{
+        margin-top: 2rem;
+    }
+
+    .promo h1{
+        font-size: 3vh;
+        margin-top: 5rem;
+    }
+
+    .info2{
+        font-size: 120%;
+        height: 250px; /* Altura dos quadrados */
+    }
+
 
     main .form{
         margin-left: 13rem;
@@ -644,22 +659,11 @@ footer .social img{
         height: 353px; /* Altura dos quadrados */
     }
 
-    .slider {
-        position: relative;
-        top: -5rem;
-        left: -7rem;
-        overflow: hidden;
-        width: 80%;
-        height: auto; /* Defina a altura desejada para os slides */
-    }
+    main .rodape{
+        margin-top: 3rem;
+        margin-left: -27rem;
     
-    .slides {
-        display: flex;
-        transition: transform 0.5s ease; /* Adiciona uma transição suave */
     }
+
     
-    .slides img {
-        width: 100%;
-        height: auto;
-    }
 }
