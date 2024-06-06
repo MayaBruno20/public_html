@@ -1,2 +1,4 @@
 /.vscode
+/cypress
+/node_modules
 /backup
