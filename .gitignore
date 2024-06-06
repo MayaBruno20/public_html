@@ -1,4 +1,4 @@
 /.vscode
-/cypress
-/node_modules
 /backup
+cypress/
+node_modules/
