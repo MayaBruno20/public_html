@@ -698,6 +698,98 @@ nav .sidebar-right a:hover span{
     box-shadow: none;
 }
 
+.map-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.map-container img{
+    width: 70%;
+}
+
+.map-text{
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo-carousel {
+    overflow: hidden;
+    background-color: var(--color-background);
+    padding: 2rem 0;
+    margin-top: 5rem;
+}
+
+.logo-carousel-container {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    width: 170px;
+    padding: 1rem;
+}
+
+.logo-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.insurance-section {
+    padding: 2rem;
+    background-color: var(--color-background);
+}
+
+.insurance-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.insurance-card {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-1);
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.insurance-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.3rem;
+}
+
+.insurance-card h3 {
+    font-size: 1.2rem;
+    color: var(--color-primary);
+    margin-bottom: 0.5rem;
+}
+
+.insurance-card p {
+    font-size: 0.9rem;
+    color: var(--color-dark-variant);
+}
+
+.insurance-card:hover {
+    transform: translateY(-10px);
+}
+
+
 .footer{
     background-color: var(--color-background);
     color: var(--color-dark-variant);
@@ -723,6 +815,7 @@ nav .sidebar-right a:hover span{
     width: 2.0rem;
     height: 2.0rem;
 }
+
 
 
 

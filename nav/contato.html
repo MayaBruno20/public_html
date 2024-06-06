@@ -26,19 +26,19 @@
             </div>
             <div class="ic">
                 <div class="em">
-                    <button class="material-icons-sharp" data-target="#email">email</button>
+                    <span class="material-icons-sharp">email</span>
                     <h5>E-mail</h5>
                 </div>
                 <div class="fi">
-                    <button class="material-icons-sharp" data-target="#filiais">house</button>
+                    <span class="material-icons-sharp">house</span>
                     <h5>Filiais</h5>
                 </div>
                 <div class="li">
-                    <button class="material-icons-sharp" data-target="#ligacoes">phone_in_talk</button>
+                    <span class="material-icons-sharp">phone_in_talk</span>
                     <h5>Ligações</h5>
                 </div>
                 <div class="wa">
-                    <button class="material-icons-sharp" data-target="#whatsapp">chat</button>
+                    <span class="material-icons-sharp">chat</span>
                     <h5>WhatsApp</h5>
                 </div>
             </div>
@@ -46,10 +46,10 @@
 
         <div class="banner">
             <div class="text">
-                <h1 id="ligacoes">Central de Vendas e<br>Atendimento ao Cliente</h1>
+                <h1>Central de Vendas e<br>Atendimento ao Cliente</h1>
                 <ul>
                     <li>
-                        <span id="whatsapp" class="material-icons-sharp">
+                        <span class="material-icons-sharp">
                             phone_in_talk
                         </span>
                         <p><B>+55 (16) 3703-8775</B></p>
@@ -66,7 +66,7 @@
 
         <div class="map">
             <img src="images/Mapa.png" alt="">
-            <div id="filiais" class="text">
+            <div class="text">
                 <h1>Escritórios Físicos e <br>Clientes pelo Brasil!</h1>
                 <div class="te">
                     <img class="ef" src="images/EF.png" alt="">
@@ -83,7 +83,7 @@
 
         <div class="form">
             <div class="h">
-                <h2 id="email">Entre em Contato!</h2>
+                <h2>Entre em Contato!</h2>
             </div>
             <form action="enviar.php" method="post">
                 <input type="text" id="nome" name="nome" placeholder="nome" required><br><br>
@@ -126,20 +126,6 @@
     <script src="scripts/dark.js"></script>
     <script src="scripts/script.js"></script> 
     <script>
-        // Scroll to section
-        document.querySelectorAll('.material-icons-sharp').forEach(button => {
-            button.addEventListener('click', function() {
-                const targetId = this.getAttribute('data-target');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
         // Obtém todos os links de navegação
         var links = document.querySelectorAll('.sidebar a');
 
