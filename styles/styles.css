@@ -208,6 +208,13 @@ main .alter img{
     margin: 3px;
 }
 
+.rectangle,
+.square1,
+.square2,
+.square3{
+    margin-top: -0.1rem;
+}
+
 .square1 {
     position: absolute;
     top: 80%;
@@ -358,10 +365,10 @@ main .container h3{
 }
 
 .btn1{
-    color: var(--color-white);
+    color: white;
     cursor: pointer;
-
-    background-color: var(--color-box);
+    background-color: #00416f;
+    border-radius: 10px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -374,7 +381,7 @@ main .container h3{
 
 .btn1:hover{
     color: black;
-    background-color: var(--color-success);
+    background-color: var(--color-box);
 }
 
 .product{
@@ -448,7 +455,7 @@ nav .sidebar-right a:hover span{
 
 .product1{
     position: absolute;
-    top: 12.9rem;
+    top: 20.3rem;
     left: 14.1rem;
     display: grid;
     margin: 0 auto;
@@ -517,7 +524,7 @@ nav .sidebar-right1 a:hover span{
 
 .product2{
     position: absolute;
-    top: 20.4rem;
+    top: 16.6rem;
     left: 14.1rem;
     display: grid;
     margin: 0 auto;
@@ -586,7 +593,7 @@ nav .sidebar-right2 a:hover span{
 
 .product4{
     position: absolute;
-    top: 16.6rem;
+    top: 12.9rem;
     left: 14.1rem;
     display: grid;
     margin: 0 auto;
@@ -1016,7 +1023,7 @@ nav .sidebar-right a:hover span{
 
     .product1 nav{
         position: absolute;
-        top: -0.6rem;
+        top: -1.2rem;
         display: grid;
         margin: 0 auto;
         gap: 1rem;
@@ -1030,7 +1037,7 @@ nav .sidebar-right a:hover span{
 
     .product2 nav{
         position: absolute;
-        top: -1.3rem;
+        top: -1rem;
         display: grid;
         margin: 0 auto;
         gap: 1rem;
@@ -1039,7 +1046,7 @@ nav .sidebar-right a:hover span{
     
     .product4 nav{
         position: absolute;
-        top: -0.9rem;
+        top: -0.6rem;
         display: grid;
         margin: 0 auto;
         gap: 1rem;
