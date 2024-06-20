@@ -5,6 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PR Seg - Facilitadora Financeira, oferecendo seguros personalizados para suas necessidades.">
+    <meta name="keywords" content="Seguros, Finanças, PR Seg, Corretora de Seguros">
+    <meta name="author" content="PR Seg">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="icon" href="images/logo/favicon.ico" type="image/x-icon">
@@ -124,9 +127,28 @@
             </a>
         </div>
     </div> 
-
+    <script src="slide.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadContent('nav/home.html');
+        });
+    
+        function loadContent(url) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data;
+
+                    let metaContent = document.createElement('meta');
+                    metaContent.name = "description";
+                    metaContent.content = data.substring(0, 150);
+                    document.head.appendChild(metaContent);
+                })
+                .catch(error => console.error('Erro ao carregar conteúdo:', error));
+        }
+    </script>
     <script>
     // Obtém todos os links de navegação
     var links = document.querySelectorAll('.sidebar a');

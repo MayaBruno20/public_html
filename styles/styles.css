@@ -712,45 +712,10 @@ nav .sidebar-right a:hover span{
     text-align: center;
 }
 
-.logo-carousel {
-    overflow: hidden;
-    background-color: var(--color-background);
-    padding: 2rem 0;
-    margin-top: 5rem;
-}
-
-.logo-carousel-container {
-    display: flex;
-    animation: scroll 20s linear infinite;
-}
-
-.logo-item {
-    flex: 0 0 auto;
-    width: 170px;
-    padding: 1rem;
-}
-
-.logo-item img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-
 .insurance-section {
     padding: 2rem;
     background-color: var(--color-background);
+    margin-top: -30rem;
 }
 
 .insurance-container {
@@ -790,6 +755,7 @@ nav .sidebar-right a:hover span{
 }
 
 
+
 .footer{
     background-color: var(--color-background);
     color: var(--color-dark-variant);
@@ -816,8 +782,36 @@ nav .sidebar-right a:hover span{
     height: 2.0rem;
 }
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    bottom: 30rem;
+    left: 26.5rem;
+    max-width: 30%;
+    margin: auto;
+    overflow: hidden;
+}
 
+/* Slides */
+.slide {
+    display: none;
+}
 
+.slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/* Animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
 
 @media screen and (min-width: 1600px){
     picture img{
@@ -828,6 +822,13 @@ nav .sidebar-right a:hover span{
         margin-left: 32%;
         font-size: 20px;
     }
+
+    .slideshow-container{
+        bottom: 43rem;
+        left: 33rem;
+    }
+
+
     .square1 {
         position: absolute;
         top: 85%;
