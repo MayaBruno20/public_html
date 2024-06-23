@@ -782,17 +782,23 @@ nav .sidebar-right a:hover span{
     height: 2.0rem;
 }
 
-/* Slideshow container */
 .slideshow-container {
     position: relative;
     bottom: 30rem;
     left: 26.5rem;
+    background-color: var(--color-background);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--card-border-radius);
     max-width: 30%;
     margin: auto;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Slides */
+.slideshow-container:hover{
+    transform: translateY(-10px);
+}
+
 .slide {
     display: none;
 }
@@ -802,7 +808,6 @@ nav .sidebar-right a:hover span{
     vertical-align: middle;
 }
 
-/* Animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -877,6 +882,10 @@ nav .sidebar-right a:hover span{
         margin-left: 0.5rem;
     }
 
+    .slideshow-container{
+        margin-top: 5rem;
+    }
+
     nav .sidebar-right{
         display: flex;
         flex-direction:column;
@@ -891,7 +900,7 @@ nav .sidebar-right a:hover span{
 
     .product1{
     margin-left: 0.5rem;
-}
+    }
 
     .product2{
         margin-left: 0.5rem;
@@ -900,9 +909,34 @@ nav .sidebar-right a:hover span{
     .product4{
         margin-left: 0.5rem;
     }
+
+    .insurance-section{
+        margin-top: -40rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .insurance-section{
+        display: none;
+    }
+
+    .map-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        top: 130rem;
+    }
+
+    .map-text{
+        text-align: center;
+        order: 1;
+    }
+
+    .map-container{
+        order: 2;
+    }
+
     nav{
         position: fixed;
         background-color: var(--color-white);
@@ -1155,7 +1189,7 @@ nav .sidebar-right a:hover span{
         width: 100%;
         height: auto;
         position: absolute;
-        top: 130rem;
+        top: 200rem;
         transition: all 0.3s ease;
     }
 
@@ -1164,12 +1198,12 @@ nav .sidebar-right a:hover span{
         text-align: center;
         font-size: 10px;
         margin-top: 15px;
-        margin-left: 5rem;
+        margin-left: 4.2rem;
     }
     
     .footer .social img{
-        margin-top: -1rem;
-        margin-left: 3rem;
+        margin-top: -2rem;
+        margin-left: 2rem;
     }
     
 }
