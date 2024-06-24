@@ -29,7 +29,7 @@
                     <span class="material-icons-sharp">email</span>
                     <h5>E-mail</h5>
                 </div>
-                <div class="fi">
+                <div class="fi" id="filiais">
                     <span class="material-icons-sharp">house</span>
                     <h5>Filiais</h5>
                 </div>
@@ -122,28 +122,6 @@
             <img src="images/circle.png" alt="">
         </div>
     </div>
-
-    <script src="scripts/dark.js"></script>
-    <script src="scripts/script.js"></script> 
-    <script>
-        // Obtém todos os links de navegação
-        var links = document.querySelectorAll('.sidebar a');
-
-        // Itera sobre os links de navegação
-        links.forEach(function(link) {
-        // Adiciona um ouvinte de eventos de clique a cada link
-        link.addEventListener('click', function() {
-            // Remove a classe 'active' de todos os links
-            links.forEach(function(item) {
-                item.classList.remove('active');
-            });
-
-            // Adiciona a classe 'active' apenas ao link clicado
-            this.classList.add('active');
-            });
-        });
-    </script>
-
 </body>
 
 </html>
